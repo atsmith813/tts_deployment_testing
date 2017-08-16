@@ -15,5 +15,11 @@
   <%= @user.team_id %>
 </p>
 
+<p>
+  <% if @user.avatar.blank? == false %>
+    <img id="tweet-avatar" src= <%= @user.avatar.url %> >
+  <% end %>
+</p>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
