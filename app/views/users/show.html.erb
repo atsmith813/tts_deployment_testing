@@ -16,7 +16,7 @@
 </p>
 
 <p>
-  <% if @user.avatar.blank? == false %>
+  <% if @user.avatar.url.nil? == false %>
   	<strong>Avatar:</strong>
     <%= image_tag @user.avatar.url %>
   <% end %>
