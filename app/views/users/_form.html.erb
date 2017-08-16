@@ -18,12 +18,17 @@
 
   <div class="field">
     <%= f.label :email %>
-    <%= f.text_field :email %>
+    <%= f.text_field :email, id: :user_email%>
   </div>
 
   <div class="field">
     <%= f.label :team_id %>
-    <%= f.number_field :team_id %>
+    <%= f.number_field :team_id, id: :user_team_id %>
+  </div>
+
+  <div class="field">
+    <strong>Avatar</strong><br>
+    <%= f.file_field :avatar, id: :avatar %>
   </div>
 
   <div class="actions">
