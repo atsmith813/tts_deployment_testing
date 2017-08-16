@@ -18,7 +18,7 @@
 <p>
   <% if @user.avatar.url.nil? == false %>
   	<strong>Avatar:</strong>
-    <%= image_tag @user.avatar.url %>
+    <%= image_tag @user.avatar.url(:medium) %>
   <% end %>
 </p>
 
