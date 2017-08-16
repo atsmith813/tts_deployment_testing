@@ -18,7 +18,7 @@
 <p>
   <% if @user.avatar.blank? == false %>
   	<strong>Avatar:</strong>
-    <img id="user-avatar" src= <%= @user.avatar.url %> >
+    <%= image_tag @user.avatar.url %>
   <% end %>
 </p>
 
